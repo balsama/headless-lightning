@@ -1,0 +1,8 @@
+name: 'Headless Entity Admin UI'
+type: module
+description: 'Removes unused content entity admin interfaces and reorganizes others.'
+package: Headless Lightning
+version: 0.1.0-dev
+core: 8.x
+dependencies:
+  - headless_lightning

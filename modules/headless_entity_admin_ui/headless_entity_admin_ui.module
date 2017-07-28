@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_local_tasks_alter().
+ */
+function headless_entity_admin_ui_local_tasks_alter(&$local_tasks) {
+  $local_tasks['entity.oauth2_token.collection']['title'] = 'Tokens';
+  $local_tasks['entity.oauth2_token.collection']['base_route'] = 'entity.user.collection';
+  $local_tasks['entity.oauth2_token.collection']['weight'] = 100;
+
+  $local_tasks['entity.user.collection']['title'] = 'Users';
+}
