@@ -83,7 +83,7 @@ before_script:
 script:
   - composer validate ./profiles/headless_lightning/composer.json --no-check-all --ansi
   - phpunit --configuration ./core --group headless
-  - behat --strict --config ./sites/default/files/behat.yml --tags=headless --tags=23138ee5
+  - behat --strict --config ./sites/default/files/behat.yml --tags=headless,23138ee5
 
 matrix:
   fast_finish: true
