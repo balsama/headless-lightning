@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\headless_lightning\Functional;
+namespace Drupal\headless_lightning\Tests\Functional;
 
 use Drupal\Tests\BrowserTestBase;
 
@@ -9,6 +9,7 @@ use Drupal\Tests\BrowserTestBase;
  * @group content_api
  */
 class ContentApi extends BrowserTestBase {
+
   /**
    * {@inheritdoc}
    */
