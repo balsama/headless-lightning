@@ -77,9 +77,13 @@ install:
   - phing install -Ddb.database=drupal -Ddb.user=drupal -Ddb.password=drupal -Ddb.host=127.0.0.1 -Durl=http://127.0.0.1:8080
   # Import the fixture, if it exists.
   - phing recall -Dversion=$VERSION -Ddb.database=drupal -Ddb.user=drupal -Ddb.password=drupal -Ddb.host=127.0.0.1
+  # Execute any database and manual updates
+  - cd $TRAVIS_BUILD_DIR/docroot
+  - drupal update:execute
+  - drupal update:lightning --no-interaction
 
 before_script:
-  - cd ./docroot
+  - cd $TRAVIS_BUILD_DIR/docroot
   - drush runserver --default-server=builtin 8080 &>/dev/null &
   - jdk_switcher use oraclejdk8
   # Start Selenium and dump its ginormous log into a temporary file.
