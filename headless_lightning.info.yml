@@ -11,8 +11,8 @@ dependencies:
   - content_model_ui
   - headless_ui
   - json_content
+  - lightning_api
+  - lightning_media
+  - lightning_workflow
 themes:
   - seven
-'base profile':
-  name: lightning
-  excluded_dependencies: [block_content, breakpoint, contextual, quickedit, history, rdf, menu_ui, metatag, lightning_layout, lightning_contact_form, lightning_search, lightning_landing_page, views_ui]
