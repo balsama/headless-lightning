@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Headless Lightning" default="env">
 
-    <taskdef name="setxmlproperty" classpath="${project.basedir}/docroot/profiles/contrib/lightning/src/Task" classname="SetXMLPropertyTask" />
+    <taskdef name="setxmlproperty" classpath="${project.basedir}/src/Task" classname="SetXMLPropertyTask" />
 
     <!-- Locations of required binaries. -->
     <property name="drush" value="${project.basedir}/bin/drush" />
